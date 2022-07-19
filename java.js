@@ -164,16 +164,18 @@ document.write(ntells)
 //   for (b = 0; b <= 10; b++) {
 //     console.log(a * b);
 //   }
+
 // 3. return a boolean if a number is divisible by 10 i.e the inverse Result(damola)
 // you'll create a function that give you a "true" or "false" boolean as it output. 
 // the inputted number should only return a "true" if it's divisible by 10.
-let a = 30
-let b = 10
-if (a % b === 0) {
-    console.log(true) 
-} else {
-    console.log(false)
-}
+
+// let a = 30
+// let b = 10
+// if (a % b === 0) {
+//     console.log(true) 
+// } else {
+//     console.log(false)
+// }
     
  
 // 4. return the number vowels in this string "a-z" 
@@ -183,14 +185,10 @@ if (a % b === 0) {
 // datasets (or just string) consist of. if youfeellike an extra challenge, consider returning 
 // the number of characters \
 
-let vowels = ["a","e","i","o","u"]
-let alph = ("a","b","c","d","e","f","g","h","i","j","k")
-let count = 0
+// let vowels = ["a","e","i","o","u"]
+// let alph = ("a","b","c","d","e","f")
 
-if (alph.includes(vowels)) {
-    count++
-}
-
+// console.log(alph)
 
 
 // let mult = "x ";
@@ -208,3 +206,183 @@ if (alph.includes(vowels)) {
 // }
 
 // console.log(mult);
+
+// IF STATEMENT
+
+//if the (condition) is true, do {} else {}
+//example; Age range
+//1-10 = children
+//11 - 20 = teenager
+//21 - -50 = adult
+
+// const ageFunction = () => {
+//     const age = {
+//         children: 10,
+//         teenager: 20,
+//         adult: 30,
+//     };
+
+//     if (age.children = 10) {
+//         console.log("access to children")
+//     } else if (age.teenager <= 20) {
+//         console.log("access to teenager")
+//     } else {
+//         console.log("access to adult")
+//     }
+// };
+
+// console.log(ageFunction());
+
+//LOOPS
+
+//for-loop
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+//EXAMPLE
+// for (i = 0; i < 10; i++) {
+    // console.log(i)
+// }
+
+//WHILE STATEMENT
+
+//while (i < 10)m 
+
+// function calcAge(age) {
+// 	let age = 10;
+//     return age * 365
+// }
+
+// let ageFunction = () => {
+//     let a = 10
+//     let b = 40
+
+//     return (a + b)
+// }
+
+// console.log(ageFunction())
+
+// let carFunction = () => {
+//         let car = {
+//             color: "red",
+//             tyre: "four",
+//         }
+
+//         return Object.keys(car)
+//     };
+
+//     console.log(carFunction())
+
+    // let carFunction = () => {
+    //     let car = {
+    //         color: "red",
+    //         tyre: "four",
+    //     }
+
+    //     if (car.color) { console.log(true)
+            
+    //     } else { console.log(false)
+            
+    //     }
+    // };
+
+    // console.log(carFunction())
+
+    //checking if color inpresent from the parameters
+    // let carFunction = () => {
+    //     let car = {
+    //         color: "red",
+    //         tyre: "four",
+    //     }
+
+    //     if (car.color === "red") { console.log(true)
+            
+    //     } else { console.log(false)
+            
+    //     }
+    // };
+
+    // console.log(carFunction())
+
+    // let dateFunction = () => {
+    //     let oldDate: 19/07/22;
+
+    // }
+
+    // let dateFunction = () => {
+    //     let date = {
+    //         date1: 06,
+    //         date2: 19
+    //     }
+        
+    //     if (date.date1 === date.date2) { console.log(true)
+    //     } else {
+    //         console.log(false)
+    //     }
+    // };
+
+    // console.log(dateFunction())
+
+// let dateFunction = () => {
+//     let date = {
+//         date1: '2002-12-12',
+//         date2: '23-03-22',
+//     }
+//     if (date.date1 === date.date2) { console.log(true)
+        
+//     } else { console.log(false)
+        
+//     }
+    
+// };
+
+// console.log(dateFunction())
+
+
+// const date1 = new Date('2022-06-19');
+// const date2 = new Date('2022-06-19');
+
+// if (
+//     date1.getFullYear() === date2.getFullYear() &&
+//     date1.getMonth() === date2.getMonth() &&
+//     date1.getDate() === date2.getDate()
+// ) {
+//     console.log(true)
+// } else {
+//     console.log(false)
+// }
+
+let laptopFunction = () => {
+    let laptop = {
+        keyboard: true,
+        mouse: true,
+        screen: true,
+        charger: true,
+        battery: "100%",
+        webcam: "faultty",
+        Ram: "4GRAM",
+        ROM: 500,
+        CD_ROM: false,
+    }
+
+    delete laptop.CD_ROM, delete laptop.ROM;
+
+    return Object.keys(laptop)
+    
+};
+
+console.log(laptopFunction());
+
+   
+    function carFunction() {
+    let car = {
+        color: "red",
+        tyre: "four",
+    };
+
+    delete car.color;
+
+    return Object.keys(car);
+}
+
+    console.log(carFunction())
